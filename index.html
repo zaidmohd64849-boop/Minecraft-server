@@ -42,7 +42,6 @@ input, select{
 input[type="radio"]{
     width:auto;
 }
-
 /* submit button style */
 input[type="submit"]{
     background:green;
@@ -75,27 +74,22 @@ input[type="submit"]{
 <td><input type="text" name="username"></td>
 </tr>
 <tr>
-<td>Date of Birth:</td>
-<td><input type="date" name="DOB"></td>
+<td>Experience:</td>
+<td>
+<select name="Experience">
+<option value="">---Select---</option>
+<option value="1 Year">1 Year</option>
+<option value="2 Year">2 Year</option>
+<option value="3 Year">3 Year</option>
+<option value="Fresher">Fresher</option>
+</select>
+</td>
 </tr>
-<tr>
-<td>Mobile No.:</td>
-<td><input type="text" name="Mobile"></td>
-</tr>
-<tr>
-<td>Email:</td>
-<td><input type="email" name="Email"></td>
-</tr>
-<tr>
 <td>Gender:</td>
 <td>
 <input type="radio" name="Gender" value="Male"> Male
 <input type="radio" name="Gender" value="Female"> Female
 </td>
-</tr>
-<tr>
-<td>Photo:</td>
-<td><input type="file" name="Photo"></td>
 </tr>
 <tr>
 <td></td>
