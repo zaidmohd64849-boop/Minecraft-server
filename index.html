@@ -2,52 +2,90 @@
 <head>
     <title>Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+}
+
+/* Heading center */
+h1{
+    text-align:center;
+    padding:15px;
+}
+
+/* Form center card */
+form{
+    width:90%;
+    max-width:400px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 0 10px gray;
+}
+/* Table full width */
+table{
+    width:100%;
+}
+/* Inputs styling */
+input, select{
+    width:100%;
+    padding:8px;
+    margin-top:5px;
+    margin-bottom:10px;
+    box-sizing:border-box;
+}
+/* radio normal size */
+input[type="radio"]{
+    width:auto;
+}
+
+/* submit button style */
+input[type="submit"]{
+    background:green;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:6px;
+    cursor:pointer;
+}
+    </style>
 </head>
-
 <body bgcolor="skyblue">
-
-
     <h1>Add Minecraft Server</h1>
-
-
 <form action="https://formsubmit.co/zaidmohd64849@gmail.com" method="POST" enctype="multipart/form-data">
 
 <!-- Email settings -->
 <input type="hidden" name="_subject" value="New Student Registration">
 <input type="hidden" name="_captcha" value="false">
-
 <table>
-
 <tr>
 <td>First Name:</td>
 <td><input type="text" name="First_Name" required></td>
 </tr>
-
 <tr>
 <td>Last Name:</td>
 <td><input type="text" name="Last_Name" required></td>
 </tr>
-
 <tr>
 <td>Aternos Username:</td>
 <td><input type="text" name="username"></td>
 </tr>
-
 <tr>
 <td>Date of Birth:</td>
 <td><input type="date" name="DOB"></td>
 </tr>
-
 <tr>
 <td>Mobile No.:</td>
 <td><input type="text" name="Mobile"></td>
 </tr>
-
 <tr>
 <td>Email:</td>
 <td><input type="email" name="Email"></td>
 </tr>
-
 <tr>
 <td>Gender:</td>
 <td>
@@ -55,23 +93,15 @@
 <input type="radio" name="Gender" value="Female"> Female
 </td>
 </tr>
-
-
-
-
 <tr>
 <td>Photo:</td>
 <td><input type="file" name="Photo"></td>
 </tr>
-
 <tr>
 <td></td>
 <td><input type="submit" value="Submit"></td>
 </tr>
-
 </table>
-
 </form>
-
 </body>
 </html>
